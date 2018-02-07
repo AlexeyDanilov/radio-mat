@@ -8,3 +8,13 @@ $(document).ready(function() {
         $(tab).fadeIn();
     });
 });
+
+
+$(".callback__link").click(function() {
+    //открыть модальное окно с id="myModal"
+    $(".modal").modal('show');
+});
+
+$('.btn-primary').on('click', function(){
+   $('.close').trigger('click');
+});
