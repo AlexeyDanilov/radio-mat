@@ -1,9 +1,4 @@
-/*body {*/
-    /*padding: 20px;*/
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    /*line-height: 1.5;*/
-    /*font-size: 14px;*/
-/*}*/
+
 
 #tabs-container{
     padding: 10px 0;
@@ -67,11 +62,17 @@
 #tab-3{
     height: 300px;
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 body{
     font-family: 'Roboto', sans-serif!important;
 }
+
+.row{
+     margin-left: 0 !important;
+     margin-right: 0 !important;
+ }
 
 a:hover{
     text-decoration: none!important;
@@ -80,17 +81,7 @@ a:hover{
 .header{
     width: 100%;
     background-color: #102d41;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     padding: 50px 20px;
-}
-
-.header__wraper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 56%;
 }
 
 .logo{
@@ -101,11 +92,16 @@ a:hover{
     border-radius: 50%;
 }
 
+.slogan{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
 .header-contacts{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
 }
 
 .phone{
@@ -150,7 +146,9 @@ h1{
 
 .production__block{
     margin-top: 20px;
+    align-items: center;
 }
+
 
 .item-pic{
     width: 100%;
@@ -163,8 +161,11 @@ h1{
 }
 
 .table-pic{
-    width: 100%;
-    height: auto;
+    width: auto;
+}
+
+.with_table{
+
 }
 
 .tab-info__item{
@@ -199,6 +200,7 @@ h1{
 
 .footer__wraper--top{
     align-items: center;
+    width: 100%;
 }
 
 .copyright{
@@ -206,8 +208,77 @@ h1{
     font-size: 12px;
 }
 
-.footer__item{
+.footer__item,
+.header__item{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 991px){
+
+    .item-pic__wraper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-pic{
+        width: 60%;
+    }
+}
+
+@media(max-width: 767px){
+    .slogan{
+        margin-top: 15px;
+    }
+
+    .header{
+        padding-top: 20px;
+    }
+
+    .logo-footer{
+        margin-bottom: 15px;
+    }
+
+    .tabs-menu{
+        display: flex;
+        justify-content: space-between;
+        padding:0 5px;
+    }
+
+    .tabs-menu li{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 583px){
+    .slogan{
+        font-size: 25px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 500px){
+    .tabs-menu li a{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 432px){
+    h1{
+        font-size: 30px!important;
+    }
+}
+
+@media(max-width: 374px){
+    .tabs-menu li a{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 333px){
+    .tabs-menu li a{
+        font-size: 6px;
+    }
 }

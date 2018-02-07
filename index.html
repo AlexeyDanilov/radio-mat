@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -9,13 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<header class="header">
-    <div class="header__wraper">
+<header class="header row">
+    <div class="col-md-4 col-sm-12 col-12 header__item">
         <img src="img/logo.jpg" alt="" class="logo">
-        <div class="header-contacts">
-            <span class="phone"><i class="fa fa-phone-square phone-icon" aria-hidden="true"></i>+7(812)111-11-11</span>
-            <a href="#" class="callback__link">Отправить заявку</a>
-        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-12 slogan header__item">Компания "Компания" - №1 на рынке</div>
+    <div class="col-md-4 col-sm-12 header-contacts header__item">
+        <span class="phone"><i class="fa fa-phone-square phone-icon" aria-hidden="true"></i>+7(812)111-11-11</span>
+        <a href="#" class="callback__link">Отправить заявку</a>
     </div>
 
 </header>
@@ -24,8 +26,10 @@
     <div class="container">
         <h1>Радиопоглощающие материалы</h1>
         <div class="production__block row">
-            <img src="img/item-pic.jpg" class="col-lg-4 item-pic"></img>
-            <div class="col-lg-8 item-info">
+            <div class="col-lg-4 col-sm-12 item-pic__wraper">
+                <img src="img/item-pic.jpg" class="item-pic">
+            </div>
+            <div class="col-lg-8 col-sm-12 item-info">
 
                 <div id="tabs-container">
                     <ul class="tabs-menu">
@@ -54,7 +58,7 @@
                                 <li class="tab-info__item">шеф монтаж</li>
                             </ul>
                         </div>
-                        <div id="tab-3" class="tab-content">
+                        <div id="tab-3" class="tab-content with_table">
                             <img src="img/table.png" alt="" class="table-pic">
                         </div>
 
@@ -70,14 +74,15 @@
 <footer class="footer">
     <div class="footer__wraper">
         <div class="footer__wraper--top row">
-            <div class="col-md-4 footer__item">
-                <img src="img/logo.jpg" class="col-md-4 logo-footer">
+            <div class="col-md-4 col-sm-12 footer__item">
+                <img src="img/logo.jpg" class="logo-footer">
             </div>
-            <div class="col-md-4 addr footer__item">
+            <div class="col-md-4 col-sm-12 addr footer__item">
                 г. Санкт-Петербург<br>
-                ул.Гороховая, дом. 25
+                ул.Гороховая, дом. 25<br>
+                +7(812)111-11-11
             </div>
-            <div class="col-md-4 footer__item">
+            <div class="col-md-4 col-sm-12 footer__item">
                 <a href="#" class="callback__link">Отправить заявку</a>
             </div>
 
